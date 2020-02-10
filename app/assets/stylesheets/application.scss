@@ -2,4 +2,250 @@
 @import "environment_styles/welcome";
 @import "environment_styles/scaffold";
 
-// Begin your styles //
+table {
+	width: 100%;
+}
+
+.small-title {
+
+}
+
+.large-title {
+
+}
+
+.align-center {
+	text-align: center;
+}
+
+.blue-grey-background {
+	background-color: #F3F7FB;
+}
+
+.navigation-bar-a {
+	background-color: #FFFFFF;
+}
+
+.top-right-icons {
+	float: right;
+}
+
+.user-dropdown {
+	float: right;
+}
+
+.user-nav {
+	float: right;
+}
+
+.avatar-nav {
+	float: right;
+}
+
+.arrow-nav {
+	float: right;
+}
+
+.nav-button {
+	margin: 0px 20px 0px 20px;
+	cursor: pointer;
+}
+
+.navigation-bar-b {
+	background-color: #FFFFFF;
+}
+
+.page-container {
+	padding: 30px 60px 30px 60px;
+}
+
+.dashboard-titles {
+	margin: 0% 2% 0% 2%;
+}
+
+.line-graph-box {
+	border: 1px solid #E4E8F0;
+	border-radius: 5px;
+	margin: 0% 2% 0% 2%;
+}
+
+.line-graph {
+	border-radius: 5px;
+}
+
+.ticket-tables {
+	width: 100%;
+	background-color: #F3F7FB;
+}
+
+.ticket-table {
+	border: 1px solid #E4E8F0;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+
+.ticket-wrapper-5 {
+	clear: left;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+/*    background-color: #F3F7FB;*/
+}
+
+.ticket-wrapper-4 {
+	clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 20%;
+}
+
+.ticket-wrapper-3 {
+	clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 20%;
+}
+
+.ticket-wrapper-2 {
+	clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 20%;
+}
+
+.ticket-wrapper-1 {
+	float: left;
+    width: 100%;
+    position: relative;
+    right: 20%;
+}
+
+.ticket-wrapper-1:after {
+	clear: both;
+}
+
+.new-table {
+	float: left;
+    width: 16%;
+    position: relative;
+    left: 82%;
+    overflow: hidden;
+}
+
+.manager-feedback-table {
+	float: left;
+    width: 16%;
+    position: relative;
+    left: 86%;
+    overflow: hidden;
+}
+
+.processing-table {
+	float: left;
+    width: 16%;
+    position: relative;
+    left: 90%;
+    overflow: hidden;
+}
+
+.awaiting-feedback-table {
+	float: left;
+    width: 16%;
+    position: relative;
+    left: 94%;
+    overflow: hidden;
+}
+
+.approved-table {
+	float: left;
+    width: 16%;
+    position: relative;
+    left: 98%;
+    overflow: hidden;
+}
+
+.table-header {
+	height: 60px;
+}
+
+.table-entry-count {
+	float: right;
+}
+
+.spacer-div {
+	clear: both;
+	height: 20px;
+}
+
+.pipeline-row {
+	clear: left;
+	margin: 0% 2% 0% 2%;
+	/*display: table;*/
+	width: 96%;
+}
+
+.pipeline-chart-box {
+	float: left;
+	width: 48%;
+	background-color: #FFFFFF;
+	border: 1px solid #E4E8F0;
+	border-radius: 5px;
+	/*display: table-cell;*/
+	overflow: auto;
+}
+
+.square-chart-box {
+	float: right;
+	width: 48%;
+	background-color: #FFFFFF;
+	border: 1px solid #E4E8F0;
+	border-radius: 5px;
+	/*display: table-cell;*/
+	overflow: auto;
+}
+
+.square-chart-inner-box {
+	/*display: table;*/
+}
+
+.square-chart-counter-and-label {
+	float: right;
+}
+
+.footer-div {
+	clear: left;
+	height: 30px;
+}
+
+.clearing-div {
+	clear: both;
+}
+
+.square-tickets-ytd {
+	float: left;
+	width: 50%;
+}
+
+.square-overdue-ytd {
+	float: left;
+	width: 50%;
+}
+
+.square-closed-without-action-ytd {
+	float: left;
+	width: 50%;
+}
+
+.square-escalated-ytd {
+	float: left;
+	width: 50%;
+}
+
+.square-chart-icon-box {
+	float: left;
+	width: 33.33%
+	/*display: table-cell;*/
+}
