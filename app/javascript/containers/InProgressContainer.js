@@ -8,10 +8,11 @@ class InProgressContainer extends Component {
 		}
 	}
 
+	// Remove "empty-page-placeholder" class when page is not empty
 	render() {
 		return (
-			<div className="page-container">
-				<h3>(In Progress Page)</h3>
+			<div className="page-container empty-page-placeholder">
+				(In Progress Page)
 			</div>
 		)
 	}

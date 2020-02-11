@@ -7,10 +7,16 @@ class ApprovedTable extends Component {
 		this.state = {
 			entries: []
 		}
+		this.handleArrowClick = this.handleArrowClick.bind(this)
 	}
 
 	componentDidMount() {
 		// Fetch request to get "entries" state
+	}
+
+	handleArrowClick() {
+		// Function for when arrow is clicked...
+		// passed down to TableEntryTile
 	}
 
 	render() {
@@ -109,13 +115,15 @@ class ApprovedTable extends Component {
 
 		return (
 			<div className="ticket-table approved-table">
-				<div className="table-header">
-					<span className="small-title">
+				<div className="table-header table-header-approved">
+					<div className="small-title table-title-a">
 						APPROVED
-					</span>
-					<span className="table-entry-count">
-						{entryCount}
-					</span>
+					</div>
+					<div className="table-entry-count">
+						<span className="table-entry-count-approved">
+							{entryCount}
+						</span>
+					</div>
 				</div>
 				{display}
 			</div>

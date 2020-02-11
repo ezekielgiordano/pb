@@ -8,10 +8,11 @@ class SettingsContainer extends Component {
 		}
 	}
 
+	// Remove "empty-page-placeholder" class when page is not empty
 	render() {
 		return (
-			<div className="page-container">
-				<h3>(Settings Page)</h3>
+			<div className="page-container empty-page-placeholder">
+				(Settings Page)
 			</div>
 		)
 	}

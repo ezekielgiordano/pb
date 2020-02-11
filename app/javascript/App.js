@@ -14,7 +14,9 @@ class App extends Component {
 		return (
 			<div>
 				<NavigationBarA />
+				<div className="navigation-spacer-div"></div>
 				<NavigationBarB />
+				<div className="navigation-spacer-div"></div>
 			</div>
 		)
 	}

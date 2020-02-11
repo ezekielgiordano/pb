@@ -19,18 +19,46 @@ class NavigationBarB extends Component {
 
 	showDashboardContainer() {
 		this.setState({ selectedPage: 'dashboard-page' })
+		// Remove the part below...for demonstration when
+		// empty non-dashboard pages are displayed...
+		// Also remove "empty-page-placeholder" class from the
+		// Products, In Progress, Settings page components
+		let topRightIcons = document.getElementsByClassName('top-right-icons')[0]
+		topRightIcons.classList.remove('top-right-icons-shift-left')
+		// End of temporary section
 	}
 
 	showProductsContainer() {
 		this.setState({ selectedPage: 'products-page' })
+		// Remove the part below...for demonstration when
+		// empty non-dashboard pages are displayed...
+		// Also remove "empty-page-placeholder" class from the
+		// Products, In Progress, Settings page components
+		let topRightIcons = document.getElementsByClassName('top-right-icons')[0]
+		topRightIcons.classList.add('top-right-icons-shift-left')
+		// End of temporary section
 	}
 
 	showInProgressContainer() {
 		this.setState({ selectedPage: 'in-progress-page' })
+		// Remove the part below...for demonstration when
+		// empty non-dashboard pages are displayed...
+		// Also remove "empty-page-placeholder" class from the
+		// Products, In Progress, Settings page components
+		let topRightIcons = document.getElementsByClassName('top-right-icons')[0]
+		topRightIcons.classList.add('top-right-icons-shift-left')
+		// End of temporary section
 	}
 
 	showSettingsContainer() {
 		this.setState({ selectedPage: 'settings-page' })
+		// Remove the part below...for demonstration when
+		// empty non-dashboard pages are displayed...
+		// Also remove "empty-page-placeholder" class from the
+		// Products, In Progress, Settings page components
+		let topRightIcons = document.getElementsByClassName('top-right-icons')[0]
+		topRightIcons.classList.add('top-right-icons-shift-left')
+		// End of temporary section
 	}
 
 	render() {
@@ -48,37 +76,60 @@ class NavigationBarB extends Component {
 		}
 		if (selectedPage === 'settings-page') {
 			display = <SettingsContainer />
+		}
+
+		let navButtons = document.getElementsByClassName('nav-button')
+		let i
+		for (i = 0; i < navButtons.length; i++) {
+			let buttonName = navButtons[i].getAttribute('name')
+			if (buttonName === this.state.selectedPage) {
+				navButtons[i].classList.add('selected-nav-button')
+			} else {
+				navButtons[i].classList.remove('selected-nav-button')
+			}
 		}		
 
 		return (
 			<div>
 				<div className="navigation-bar-b">
-					<span
-						onClick={this.showDashboardContainer}
-						className="nav-button"
-					>
-						Dashboard
-					</span>
-					<span
-						onClick={this.showProductsContainer}
-						className="nav-button"
-					>
-						Products
-					</span>
-					<span
-						onClick={this.showInProgressContainer}
-						className="nav-button"
-					>
-						In Progress
-					</span>
-					<span
-						onClick={this.showSettingsContainer}
-						className="nav-button"
-					>
-						Settings
-					</span>
+					<div className="navigation-bar-b-middle">
+						<div className="navigation-bar-b-interior">
+							<span className="all-navigation-bar-b-buttons">
+								<span
+									onClick={this.showDashboardContainer}
+									className="nav-button selected-nav-button"
+									name="dashboard-page"
+								>
+									Dashboard
+								</span>
+								<span
+									onClick={this.showProductsContainer}
+									className="nav-button"
+									name="products-page"
+								>
+									Products
+								</span>
+								<span
+									onClick={this.showInProgressContainer}
+									className="nav-button"
+									name="in-progress-page"
+								>
+									In Progress
+								</span>
+								<span
+									onClick={this.showSettingsContainer}
+									className="nav-button"
+									name="settings-page"
+								>
+									Settings
+								</span>
+							</span>
+						</div>
+					</div>	
 				</div>
-				{display}
+				<div className="blue-grey-background">
+					{display}
+				</div>
 			</div>
 		)
 	}

@@ -20,7 +20,7 @@ class TicketTables extends Component {
 	render() {
 		return (
 			<div>
-				<div className="small-title align-center">
+				<div className="small-title ticket-tables-title">
 					THIS WEEK'S TICKET ESCALATIONS
 				</div>
 				<div className="ticket-tables">
