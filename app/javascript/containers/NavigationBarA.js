@@ -41,40 +41,46 @@ class NavigationBarA extends Component {
 
 		return (
 			<div className="navigation-bar-a">
-				<Image url={pbj} />
-				<span className="top-right-icons">
-					<span className="bell-notifier">
-						<img src={bell} />
-						<span className="bell-counter">
-							{this.state.bellCount}
-						</span>
-					</span>
-					<span className="box-notifier">
-						<img src={box} />
-						<span className="box-counter">
-							{this.state.boxCount}
-						</span>
-					</span>
-					<span className="user-dropdown">
-						<span className="arrow-nav">
-							<img src={arrowDown} />
-						</span>
-						<span className="avatar-nav">
-							<Avatar
-								name={userNameFirstLast}
-								size='xs'
-							/>
-						</span>
-						<span className="user-nav">
-							<User
-						      name={userNameFirstLast}
-						      orientation="horizontal"
-						      align="left"
-						      avatar_url={avatarUrl}
-							/>
-						</span>
-					</span>
-				</span>
+				<div className="navigation-bar-a-middle">
+					<div className="navigation-bar-a-interior">
+						<div className="pbj-image-box">
+							<Image url={pbj} />
+						</div>
+						<div className="top-right-icons">
+							<span className="bell-notifier">
+								<img src={bell} />
+								<span className="bell-counter">
+									{this.state.bellCount}
+								</span>
+							</span>
+							<span className="box-notifier">
+								<img src={box} />
+								<span className="box-counter">
+									{this.state.boxCount}
+								</span>
+							</span>
+							<span className="user-dropdown">
+								<span className="arrow-nav">
+									<img src={arrowDown} />
+								</span>
+								<span className="avatar-nav">
+									<Avatar
+										name={userNameFirstLast}
+										size='xs'
+									/>
+								</span>
+								<span className="user-nav">
+									<User
+								      name={userNameFirstLast}
+								      orientation="horizontal"
+								      align="left"
+								      avatar_url={avatarUrl}
+									/>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		)
 	}

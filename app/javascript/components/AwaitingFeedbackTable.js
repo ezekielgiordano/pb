@@ -7,10 +7,16 @@ class AwaitingFeedbackTable extends Component {
 		this.state = {
 			entries: []
 		}
+		this.handleArrowClick = this.handleArrowClick.bind(this)
 	}
 
 	componentDidMount() {
 		// Fetch request to get "entries" state
+	}
+
+	handleArrowClick() {
+		// Function for when arrow is clicked...
+		// passed down to TableEntryTile
 	}
 
 	render() {
@@ -44,13 +50,15 @@ class AwaitingFeedbackTable extends Component {
 
 		return (
 			<div className="ticket-table awaiting-feedback-table">
-				<div className="table-header">
-					<span className="small-title">
-						AWAITING FEEDBACK
-					</span>
-					<span className="table-entry-count">
-						{entryCount}
-					</span>
+				<div className="table-header table-header-awaiting-feedback">
+					<div className="small-title table-title-b">
+						AWAITING<br />FEEDBACK
+					</div>
+					<div className="table-entry-count">
+						<span className="table-entry-count-awaiting-feedback">
+							{entryCount}
+						</span>
+					</div>
 				</div>
 				{display}
 			</div>

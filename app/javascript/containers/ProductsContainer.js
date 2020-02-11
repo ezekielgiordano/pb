@@ -8,10 +8,11 @@ class ProductsContainer extends Component {
 		}
 	}
 
+	// Remove "empty-page-placeholder" class when page is not empty
 	render() {
 		return (
-			<div className="page-container">
-				<h3>(Products Page)</h3>
+			<div className="page-container empty-page-placeholder">
+				(Products Page)
 			</div>
 		)
 	}

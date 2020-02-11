@@ -7,10 +7,16 @@ class ProcessingTable extends Component {
 		this.state = {
 			entries: []
 		}
+		this.handleArrowClick = this.handleArrowClick.bind(this)
 	}
 
 	componentDidMount() {
 		// Fetch request to get "entries" state
+	}
+
+	handleArrowClick() {
+		// Function for when arrow is clicked...
+		// passed down to TableEntryTile
 	}
 
 	render() {
@@ -49,13 +55,15 @@ class ProcessingTable extends Component {
 
 		return (
 			<div className="ticket-table processing-table">
-				<div className="table-header">
-					<span className="small-title">
+				<div className="table-header table-header-processing">
+					<div className="small-title table-title-a">
 						PROCESSING
-					</span>
-					<span className="table-entry-count">
-						{entryCount}
-					</span>
+					</div>
+					<div className="table-entry-count">
+						<span className="table-entry-count-processing">
+							{entryCount}
+						</span>
+					</div>
 				</div>
 				{display}
 			</div>

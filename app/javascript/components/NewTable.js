@@ -7,10 +7,16 @@ class NewTable extends Component {
 		this.state = {
 			entries: []
 		}
+		this.handleArrowClick = this.handleArrowClick.bind(this)
 	}
 
 	componentDidMount() {
 		// Fetch request to get "entries" state
+	}
+
+	handleArrowClick() {
+		// Function for when arrow is clicked...
+		// passed down to TableEntryTile
 	}
 
 	render() {
@@ -31,7 +37,7 @@ class NewTable extends Component {
 				id: 2,
 				name: 'Jon McDonough',
 				avatar_url: 'https://randomuser.me/api/portraits/men/44.jpg',
-				entry_type: 'Missing part...'
+				entry_type: 'Missing part'
 			},
 			{
 				id: 3,
@@ -61,13 +67,13 @@ class NewTable extends Component {
 				id: 7,
 				name: 'Greg Nakamura',
 				avatar_url: 'https://randomuser.me/api/portraits/men/44.jpg',
-				entry_type: 'Missing part...'
+				entry_type: 'Missing part'
 			},
 			{
 				id: 8,
 				name: 'Juana Martinez',
 				avatar_url: 'https://randomuser.me/api/portraits/women/44.jpg',
-				entry_type: 'Missing part...'
+				entry_type: 'Missing part'
 			},
 			{
 				id: 9,
@@ -98,13 +104,15 @@ class NewTable extends Component {
 
 		return (
 			<div className="ticket-table new-table">
-				<div className="table-header">
-					<span className="small-title">
+				<div className="table-header table-header-new">
+					<div className="small-title table-title-a">
 						NEW
-					</span>
-					<span className="table-entry-count">
-						{entryCount}
-					</span>
+					</div>
+					<div className="table-entry-count">
+						<span className="table-entry-count-new">
+							{entryCount}
+						</span>
+					</div>
 				</div>
 				{display}
 			</div>
