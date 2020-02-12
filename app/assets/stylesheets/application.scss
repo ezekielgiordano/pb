@@ -21,6 +21,12 @@ table {
 	margin: -8px 0px 9px 0px;
 }
 
+@media screen and (max-width: 375px) {
+  	.large-title {
+  	
+  	}
+}
+
 .blue-grey-background {
 	background-color: #F3F7FB;
 }
@@ -41,6 +47,20 @@ table {
 	margin: 0% 2% 0% 2%;
 }
 
+@media screen and (max-width: 375px) {
+	.navigation-bar-a {
+		height: 51px;
+	}
+
+  	.navigation-bar-a-middle {
+    	margin: 0px 0px 0px 0px;
+  	}
+
+  	.navigation-bar-a-interior {
+    	margin: 0% 0% 0% 0%;
+  	}
+}
+
 .pbj-image-box {
 	float: left;
 	margin-left: 17px;
@@ -48,8 +68,14 @@ table {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+  	.pbj-image-box {
+    	margin: 0px 0px 0px 4px;
+  	}
+}
+
 .bell-notifier {
-	margin-right: 40px;
+	margin: 0px 40px 0px 0px;
 	cursor: pointer;
     user-select: none;
 }
@@ -58,6 +84,16 @@ table {
 	margin-right: 30px;
 	cursor: pointer;
     user-select: none;
+}
+
+@media screen and (max-width: 375px) {
+  	.bell-notifier {
+    	margin: 0px 3px 0px 0px;
+  	}
+
+  	.box-notifier {
+  		margin: 0px 0px 0px 0px;
+  	}
 }
 
 .bell-counter {
@@ -84,13 +120,33 @@ table {
     margin-left: 2px;
 }
 
+@media screen and (max-width: 375px) {
+  	.bell-counter {
+    	margin: 0px 0px 0px 0px;
+  	}
+
+  	.box-counter{
+  		margin: 0px 0px 0px 1px;
+  	}
+}
+
 .top-right-icons {
 	float: right;
 	padding-top: 15px;
 }
 
 .top-right-icons-shift-left {
-	margin-right: 14.6px;
+	margin: 0px 14.6px 0px 0px;
+}
+
+@media screen and (max-width: 375px) {
+	.top-right-icons {
+		margin: 0px 5px 0px 0px;
+	}
+
+  	.top-right-icons-shift-left {
+    	margin: 0px 5px 0px 0px
+  	}
 }
 
 .user-dropdown {
@@ -174,6 +230,25 @@ table {
 	margin: 0% 2% 0% 2%;
 }
 
+@media screen and (max-width: 375px) {
+	.nav-button {
+		padding: 0px 17.7px 0px 17.7px;
+		cursor: pointer;
+	}
+
+	.navigation-bar-b {
+		font-size: 85%;
+	}
+
+	.navigation-bar-b-middle {
+		margin: 0px 0px 0px 0.12px;
+	}
+
+	.navigation-bar-b-interior {
+		margin: 0% 0% 0% 0%;
+	}
+}
+
 .all-navigation-bar-b-buttons {
 	border-bottom: 4px solid #E4E8F0;
 	padding-bottom: 12px;
@@ -183,6 +258,17 @@ table {
 	font-weight: bold;
 	border-bottom: 4px solid #1C58CE;
 	padding-bottom: 12px;
+}
+
+@media screen and (max-width: 375px) {
+	.all-navigation-bar-b-buttons {
+		padding-bottom: 14px;
+	}
+
+	.selected-nav-button {
+		font-weight: bold;
+		padding-bottom: 14px;
+	}
 }
 
 .page-container {
@@ -195,6 +281,12 @@ table {
 	background-color: #F3F7FB;
 }
 
+@media screen and (max-width: 375px) {
+	.empty-page-placeholder {
+		margin: 0% 0% 0% 0%;
+	}
+}
+
 .dashboard-titles {
 	margin: 0% 2% 0% 2%;
 }
@@ -203,6 +295,21 @@ table {
 	border: 1px solid #E4E8F0;
 	border-radius: 5px;
 	margin: 0% 2% 0% 2%;
+}
+
+@media screen and (max-width: 375px) {
+	.page-container {
+		padding: 30px 10px 30px 10px;
+		background-color: #F3F7FB;
+	}
+
+	.dashboard-titles {
+		margin: 0% 0% 0% 0%;
+	}
+
+	.line-graph-box {
+		margin: 0% 0% 0% 0%;
+	}
 }
 
 .line-graph {
@@ -223,6 +330,7 @@ table {
 	border: 1px solid #E4E8F0;
 	border-radius: 5px;
 	background-color: #FFFFFF;
+	/*overflow: hidden;*/
 }
 
 .ticket-wrapper-5 {
@@ -230,6 +338,17 @@ table {
     float: left;
     width: 100%;
     overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+	.ticket-table {
+		word-wrap: break-word;
+	}
+
+	.ticket-wrapper-5 {
+	    width: 103.7%;
+	    margin-left: -6px;
+	}
 }
 
 .ticket-wrapper-4 {
@@ -272,7 +391,6 @@ table {
     width: 17.6%;
     position: relative;
     left: 82%;
-    overflow: hidden;
 }
 
 .manager-feedback-table {
@@ -280,7 +398,6 @@ table {
     width: 17.6%;
     position: relative;
     left: 84%;
-    overflow: hidden;
 }
 
 .processing-table {
@@ -288,7 +405,6 @@ table {
     width: 17.6%;
     position: relative;
     left: 86%;
-    overflow: hidden;
 }
 
 .awaiting-feedback-table {
@@ -296,7 +412,6 @@ table {
     width: 17.6%;
     position: relative;
     left: 88%;
-    overflow: hidden;
 }
 
 .approved-table {
@@ -304,7 +419,6 @@ table {
     width: 17.6%;
     position: relative;
     left: 90%;
-    overflow: hidden;
 }
 
 .table-header {
@@ -394,9 +508,47 @@ table {
 	padding: 0px 8px 0px 8px;	
 }
 
+@media screen and (max-width: 375px) {
+	.table-title-a {
+	    margin: -5.5px 2px 0px 2px;
+	    font-size: 57%;
+	}
+
+	.table-title-b {
+		margin: -8.5px 2px 0px 2px;
+		font-size: 57%;
+	}
+
+	.table-entry-count {
+		padding: 0px 9px 0px 0px;
+		margin: 0px -2px 0px 0px;
+	}
+
+	.table-entry-count-new {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.table-entry-count-manager-feedback {
+		margin: 0px 0px 0px 0px;	
+	}
+
+	.table-entry-count-processing {
+		margin: 0px 0px 0px 0px;	
+	}
+
+	.table-entry-count-awaiting-feedback {
+		margin: 0px 0px 0px 0px;	
+	}
+
+	.table-entry-count-approved {
+		margin: 0px 0px 0px 0px;	
+	}
+}
+
 .table-entry-tile {
 	border-bottom: 1px solid #E4E8F0;
 	cursor: pointer;
+/*	word-break: break-all;*/
 }
 
 .table-avatar {
@@ -414,6 +566,29 @@ table {
 	padding-top: 11px;
 	font-size: 93%;
 	margin: 0px 0px 0px 9px;
+}
+
+@media screen and (max-width: 375px) {
+	.table-entry-tile {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		max-height: 78;
+		max-width: 62.78;
+		word-break: break-all;
+	}
+
+	.table-avatar {
+		float: left;
+		margin: 5px 0px 5px 9px;
+		user-select: none;
+	}
+
+	.table-entry-type {
+/*		float: left;*/
+		padding-top: 11px;
+		font-size: 75%;
+		margin: -12px 2px 3px 3px;
+	}	
 }
 
 .arrow-right {
@@ -457,6 +632,20 @@ table {
 	overflow: auto;
 }
 
+@media screen and (max-width: 375px) {
+	.pipeline-row {
+		clear: left;
+		margin: 0% 0% 0% 0%;
+		width: 100%;
+	}
+
+	.pipeline-chart-box {
+		/*float: left;*/
+		width: 100%;
+		margin: 0px 0px 22px 0px;
+	}
+}
+
 .pipeline-chart-title-box {
 	border-bottom: 1px solid #E4E8F0;
 	font-size: 93%;
@@ -497,6 +686,18 @@ table {
 	overflow: hidden;
 }
 
+@media screen and (max-width: 375px) {
+	.square-chart-box {
+		/*float: right;*/
+		width: 100%;
+		height: 100%;
+	}
+
+	.square-chart-inner-box {
+		padding: 20px 0px 20px 30px;
+	}
+}
+
 .square-chart-icon-box {
 	margin: 1px 0px 0px 0px;
 	user-select: none;
@@ -515,6 +716,16 @@ table {
 	font-size: 85%;
 	opacity: 50%;
 	margin: -17px 30px 0px 0px;
+}
+
+@media screen and (max-width: 375px) {
+	.square-chart-counter-and-label {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.square-chart-inner-box-label {
+		margin: -17px 30px 0px 2px;
+	}
 }
 
 .top-left-box {

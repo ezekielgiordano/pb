@@ -43,7 +43,7 @@ class NavigationBarA extends Component {
 				<div className="navigation-bar-a-middle">
 					<div className="navigation-bar-a-interior">
 						<div className="pbj-image-box">
-							<Image url={pbj} />
+							<Image url={pbj} className="pbj-image" />
 						</div>
 						<div className="top-right-icons">
 							<span className="bell-notifier">
