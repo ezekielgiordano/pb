@@ -12,12 +12,14 @@ const TableEntryTile = props => {
 					url={props.entry.avatar_url}
 				/>
 			</div>
-			<div className="arrow-right">
-				<img src={arrowRight} />
-			</div>
-			<div className="table-entry-type">
-				{props.entry.entry_type}
-			</div>
+			<span className="table-entry-type-and-arrow">
+				<div className="arrow-right">
+					<img src={arrowRight} />
+				</div>
+				<div className="table-entry-type">
+					{props.entry.entry_type}
+				</div>
+			</span>
 			<div className="table-spacer-div"></div>
 		</div>
 	)

@@ -5,13 +5,22 @@ class ManagerFeedbackTable extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			entries: []
+			entries: [],
+			bottomSectionVisible: false
 		}
 		this.handleArrowClick = this.handleArrowClick.bind(this)
 	}
 
 	componentDidMount() {
 		// Fetch request to get "entries" state
+	}
+
+	showBottomSection() {
+		this.setState({ bottomSectionVisible: true })
+	}
+
+	hideBottomSection() {
+		this.setState({ bottomSectionVisible: false })
 	}
 
 	handleArrowClick() {
@@ -58,18 +67,68 @@ class ManagerFeedbackTable extends Component {
 				entry_type: 'Not perform...'
 			}
 		]
-		let entries = this.state.entries
+		
+		let entries = this.state.entries.sort((b, a) => {
+			return ( b.id - a.id )
+		})
 		let entryCount = entries.length
 		if (entries.length === 0) {
-			entries = exampleForWhenThereIsNoData
+			entries = exampleForWhenThereIsNoData.sort((b, a) => {
+				return ( b.id - a.id )
+			})
 			entryCount = exampleForWhenThereIsNoData.length
 		}
-		let temporaryCount = 0
-		let display = entries.map(entry => {
-			return (
-				<TableEntryTile key={entry.id} entry={entry} />
-			)
-		})
+
+		let display
+		let showMoreTile
+		let showFewerTile
+		if (entries.length <= 6) {
+			display = entries.map(entry => {
+				return (
+					<TableEntryTile key={entry.id} entry={entry} />
+				)
+			})
+		} else {
+			if (this.state.bottomSectionVisible === false) {
+				let topSix = []
+				let i
+				for (i = 6; i > 0; i--) {
+					topSix.push(entries[i - 1])
+				}
+				topSix.sort((b, a) => {
+					return ( b.id - a.id )
+				})
+				display = topSix.map(entry => {
+					return (
+						<TableEntryTile key={entry.id} entry={entry} />
+					)
+				})
+				showMoreTile =
+					<div
+						onClick={this.showBottomSection}
+						className="show-more-tile"
+					>
+						<span className="show-more-label">
+							Show More
+						</span>
+					</div>
+			} else {
+				display = entries.map(entry => {
+					return (
+						<TableEntryTile key={entry.id} entry={entry} />
+					)
+				})
+				showFewerTile =
+					<div
+						onClick={this.hideBottomSection}
+						className="show-more-tile"
+					>
+						<span className="show-more-label">
+							Show Fewer
+						</span>
+					</div>		
+			}
+		}
 
 		return (
 			<div className="ticket-table manager-feedback-table">
@@ -84,6 +143,8 @@ class ManagerFeedbackTable extends Component {
 					</div>
 				</div>
 				{display}
+				{showMoreTile}
+				{showFewerTile}
 			</div>
 		)
 	}

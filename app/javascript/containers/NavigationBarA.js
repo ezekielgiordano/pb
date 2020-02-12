@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Image } from 'playbook-ui'
-import { Avatar } from 'playbook-ui'
-import { User } from 'playbook-ui'
+import UserDropdown from '../components/UserDropdown'
 import pbj from '../../assets/images/pbj.png'
 import bell from '../../assets/images/bell.png'
 import box from '../../assets/images/box.png'
@@ -59,25 +58,10 @@ class NavigationBarA extends Component {
 									{this.state.boxCount}
 								</span>
 							</span>
-							<span className="user-dropdown">
-								<span className="arrow-nav">
-									<img src={arrowDown} />
-								</span>
-								<span className="avatar-nav">
-									<Avatar
-										name={userNameFirstLast}
-										size='xs'
-									/>
-								</span>
-								<span className="user-nav">
-									<User
-								      name={userNameFirstLast}
-								      orientation="horizontal"
-								      align="left"
-								      avatar_url={avatarUrl}
-									/>
-								</span>
-							</span>
+							<UserDropdown
+								userNameFirstLast={userNameFirstLast}
+								avatarUrl={avatarUrl}
+							/>
 						</div>
 					</div>
 				</div>
