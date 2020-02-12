@@ -21,7 +21,7 @@ table {
 	margin: -8px 0px 9px 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   	.large-title {
   	
   	}
@@ -47,13 +47,27 @@ table {
 	margin: 0% 2% 0% 2%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
 	.navigation-bar-a {
 		height: 51px;
 	}
 
   	.navigation-bar-a-middle {
     	margin: 0px 0px 0px 0px;
+  	}
+
+  	.navigation-bar-a-interior {
+    	margin: 0% 0% 0% 0%;
+  	}
+}
+
+@media screen and (max-width: 320px) {
+	.navigation-bar-a {
+		height: 51px;
+	}
+
+  	.navigation-bar-a-middle {
+    	margin: 0px -7.5px 0px -7.5px;
   	}
 
   	.navigation-bar-a-interior {
@@ -68,7 +82,7 @@ table {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   	.pbj-image-box {
     	margin: 0px 0px 0px 4px;
   	}
@@ -86,7 +100,7 @@ table {
     user-select: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   	.bell-notifier {
     	margin: 0px 3px 0px 0px;
   	}
@@ -120,7 +134,7 @@ table {
     margin-left: 2px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   	.bell-counter {
     	margin: 0px 0px 0px 0px;
   	}
@@ -139,7 +153,17 @@ table {
 	margin: 0px 14.6px 0px 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
+	.top-right-icons {
+		margin: 0px 5px 0px 0px;
+	}
+
+  	.top-right-icons-shift-left {
+    	margin: 0px 5px 0px 0px
+  	}
+}
+
+@media screen and (max-width: 774px) {
 	.top-right-icons {
 		margin: 0px 5px 0px 0px;
 	}
@@ -230,9 +254,28 @@ table {
 	margin: 0% 2% 0% 2%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.nav-button {
 		padding: 0px 17.7px 0px 17.7px;
+		cursor: pointer;
+	}
+
+	.navigation-bar-b {
+		font-size: 85%;
+	}
+
+	.navigation-bar-b-middle {
+		margin: 0px 0px 0px 0.12px;
+	}
+
+	.navigation-bar-b-interior {
+		margin: 0% 0% 0% 0%;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.nav-button {
+		padding: 0px 15.8px 0px 15.8px;
 		cursor: pointer;
 	}
 
@@ -260,7 +303,7 @@ table {
 	padding-bottom: 12px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.all-navigation-bar-b-buttons {
 		padding-bottom: 14px;
 	}
@@ -281,7 +324,7 @@ table {
 	background-color: #F3F7FB;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.empty-page-placeholder {
 		margin: 0% 0% 0% 0%;
 	}
@@ -297,7 +340,7 @@ table {
 	margin: 0% 2% 0% 2%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.page-container {
 		padding: 30px 10px 30px 10px;
 		background-color: #F3F7FB;
@@ -340,7 +383,7 @@ table {
     overflow: hidden;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.ticket-table {
 		word-wrap: break-word;
 	}
@@ -508,7 +551,7 @@ table {
 	padding: 0px 8px 0px 8px;	
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.table-title-a {
 	    margin: -5.5px 2px 0px 2px;
 	    font-size: 57%;
@@ -568,7 +611,7 @@ table {
 	margin: 0px 0px 0px 9px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 774px) {
 	.table-entry-tile {
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -632,7 +675,7 @@ table {
 	overflow: auto;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 774px) {
 	.pipeline-row {
 		clear: left;
 		margin: 0% 0% 0% 0%;
@@ -676,19 +719,24 @@ table {
 	background-color: #FFFFFF;
 	border: 1px solid #E4E8F0;
 	border-radius: 5px;
-	overflow: auto;
+/*	overflow: auto;*/
 	height: 362px;
 }
 
 .square-chart-inner-box {
 	height: 50%;
-	padding: 48px 0px 0px 20px;
-	overflow: hidden;
+	padding: 48px 0px 0px 18px;
+	/*overflow: hidden;*/
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1022px) {
+	.square-chart-inner-box {
+		padding: 10px 0px 20px 30px;
+	}
+}
+
+@media screen and (max-width: 774px) {
 	.square-chart-box {
-		/*float: right;*/
 		width: 100%;
 		height: 100%;
 	}
@@ -718,7 +766,7 @@ table {
 	margin: -17px 30px 0px 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.square-chart-counter-and-label {
 		margin: 0px 0px 0px 0px;
 	}
