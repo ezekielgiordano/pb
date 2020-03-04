@@ -124,7 +124,7 @@ GEM
       webpacker (= 4.0.7)
       webpacker-react (~> 0.3.2)
     public_suffix (3.1.1)
-    puma (3.12.2)
+    puma (3.12.4)
     rack (2.0.8)
     rack-proxy (0.6.5)
       rack
